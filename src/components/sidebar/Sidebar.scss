@@ -45,7 +45,7 @@
       }
 
       &:hover {
-        color: #ff26db
+        color: #B026ff
 
         svg {
           opacity: 0;
@@ -73,8 +73,9 @@
       &:first-child {
         &:after {
           content: 'HOME';
-          color: #B026ff
-          ;
+          color: #C3B1E1;
+          font-weight: 600;
+          
         }
       }
     }
@@ -82,7 +83,8 @@
     a.about-link {
       &:after {
         content: 'ABOUT';
-        color: #B026ff
+        color: #C3B1E1;
+        font-weight: 600;
         
       }
     }
@@ -90,7 +92,8 @@
     a.contact-link {
       &:after {
         content: 'CONTACT';
-        color: #B026ff
+        color: #C3B1E1;
+        font-weight: 600;
       }
     }
 
@@ -127,7 +130,7 @@ ul {
 
 
       &:hover svg {
-        color: #ff26db;
+        color: #B026ff;
       }
 
     }

@@ -1,8 +1,9 @@
 import './Home.scss'
 import Logo from '../../assets/images/Logo.png'
 
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { LogoComponent } from './logo/Logo'
 
 const Home = () => {
   return (
@@ -13,11 +14,12 @@ const Home = () => {
           <img src={Logo} alt="developer" />
           ana <br /> frontend developer
         </h1>
-        <h2>Frontend Developer</h2>
+        <h2>React | TypeScript</h2>
         <Link to="/contact" className="flat-button">
           CONTACT ME
         </Link>
       </div>
+      <LogoComponent />
     </div>
   )
 }

@@ -1,4 +1,4 @@
-$primary-color: #ffd700;
+$primary-color: #B026ff;
 
 @import 'animate.css';
 @import '~loaders.css/src/animations/pacman.scss';
@@ -10,9 +10,10 @@ $primary-color: #ffd700;
 }
 @font-face {
   font-family: 'La Belle Aurore';
-  src: url('./assets/fonts/LaBelleAurore.woff2') format('woff2');
-    
- 
+  src: url('./assets/fonts/LaBelleAurore.woff2') format('font-woff2'),
+    url('./assets/fonts/LaBelleAurore.woff') format('font-woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {

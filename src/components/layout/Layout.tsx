@@ -1,6 +1,5 @@
 import './Layout.scss'
 
-import React from 'react'
 import Sidebar from '../sidebar/Sidebar'
 import { Outlet } from 'react-router-dom'
 
@@ -19,6 +18,7 @@ const Layout = () => {
           <span className="bottom-tag-html">&lt;/html&gt;</span>
         </span>
       </div>
+      {/* <LogoComponent /> */}
     </div>
   )
 }

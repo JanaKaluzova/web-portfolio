@@ -17,8 +17,6 @@
       margin: 8px auto;
       width: 50px;
       height: auto;
-
-      
     }
   }
 
@@ -97,11 +95,7 @@
       }
     }
 
-    a.portfolio-link {
-      &:after {
-        content: 'PORTFOLIO';
-      }
-    }
+   
 
     a.active {
       svg {
@@ -127,13 +121,13 @@ ul {
       display: block;
       font-size: 15px;
       line-height: 16px;
-
+    }
 
       &:hover svg {
         color: #B026ff;
       }
 
-    }
+   
   }
 }
 

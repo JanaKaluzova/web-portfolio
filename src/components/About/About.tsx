@@ -24,7 +24,7 @@ const About = () => {
       <div className="container about-page">
         <div className="text-zone">
           <h1>
-            <AnimatedLetters letterClass={letterClass} strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']} idx={15} />
+            <AnimatedLetters letterClass={letterClass} strArray={'About me'.split('')} idx={15} />
           </h1>
           <p>
             I'm a junior fontend developer looking for an opportunity in a dynamic company. I would like to participate

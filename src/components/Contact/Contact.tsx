@@ -43,11 +43,7 @@ const Contact = () => {
       <div className="container contact-page">
         <div className="text-zone">
           <h1>
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']}
-              idx={15}
-            />
+            <AnimatedLetters letterClass={letterClass} strArray={'Contact me'.split('')} idx={15} />
           </h1>
           <p>
             I'm interested in Junior Frontend Dev positions, however you can contact me for any other reasons as well

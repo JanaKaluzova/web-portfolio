@@ -18,7 +18,6 @@ const Layout = () => {
           <span className="bottom-tag-html">&lt;/html&gt;</span>
         </span>
       </div>
-      {/* <LogoComponent /> */}
     </div>
   )
 }

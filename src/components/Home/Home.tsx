@@ -1,7 +1,5 @@
 import './Home.scss'
 import Logo from '../../assets/images/Logo.png'
-
-import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { LogoComponent } from './logo/Logo'
 
@@ -12,7 +10,7 @@ const Home = () => {
         <h1>
           Hi, <br /> I'm
           <img src={Logo} alt="developer" />
-          ana <br /> frontend developer
+          ana, <br />a frontend developer
         </h1>
         <h2>React | TypeScript</h2>
         <Link to="/contact" className="flat-button">

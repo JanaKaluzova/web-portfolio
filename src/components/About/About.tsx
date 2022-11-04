@@ -31,9 +31,9 @@ const About = () => {
             on creating modern apps that bring an excellent user experience.
           </p>
           <p>
-            I'm passionate about programming and driven by curiosity. I'm ambitious, ready to improve my knowledge and
-            work hard until the last piece of code. I'm not afraid to dive deeply into the issue and work on it until
-            solved.
+            I'm passionate about programming and driven by curiosity. I'm ambitious, detail-oriented and ready to
+            improve my knowledge and work hard until the last piece of code. I'm not afraid to dive deeply into the
+            issue and work on it until solved. I'm open minded and have can-do attitude.
           </p>
           <p>
             Changing my career when being on a top of my skills shows how much I love challenge and learning new things.

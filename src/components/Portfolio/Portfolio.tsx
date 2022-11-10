@@ -34,6 +34,8 @@ const Portfolio = () => {
                 src={port.cover}
                 alt="portfolio"
                 className="portfolio-image"
+                // width="600"
+                // height="300px"
               />
             </div>
           );

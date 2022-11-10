@@ -2,19 +2,19 @@
   "portfolio": [
     {
       "cover": "/portfolio/1/quiz.png",
-      "title": "quiz",
+      "title": "Quiz",
       "description": "React, TS, Styled Components",
       "url": "https://react-quiz-black.vercel.app/"
     },
     {
       "cover": "/portfolio/1/zoo.png",
-      "title": "zoo",
+      "title": "Zoo",
       "description": "React, TS, CSS",
       "url": "https://zoo-gilt.vercel.app/"
     },
     {
       "cover": "/portfolio/1/shopping-cart.png",
-      "title": "shopping-cart",
+      "title": "Shopping Cart",
       "description": "React, TS, React Query, Styled Components, Material UI, fakestore API",
       "url": "https://shopping-cart-ten-red.vercel.app/"
     }

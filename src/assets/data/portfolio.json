@@ -17,6 +17,12 @@
       "title": "Shopping Cart",
       "description": "React, TS, React Query, Styled Components, Material UI, fakestore API",
       "url": "https://shopping-cart-ten-red.vercel.app/"
+    },
+    {
+      "cover": "/portfolio/1/grocery-shopping.png",
+      "title": "Grocery Shopping",
+      "description": "Next, React, TS, Bootstrap, Lodash",
+      "url": "https://roll-cart-app.vercel.app/"
     }
   ]
 }

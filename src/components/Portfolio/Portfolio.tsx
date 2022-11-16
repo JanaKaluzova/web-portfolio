@@ -1,10 +1,9 @@
 import "./Portfolio.scss";
-
 import React, { useEffect, useState } from "react";
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
 import portfolioData from "../../assets/data/portfolio.json";
 
-const Portfolio = () => {
+const Portfolio: React.FC = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
 
   useEffect(() => {

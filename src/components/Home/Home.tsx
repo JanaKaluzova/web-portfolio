@@ -1,9 +1,9 @@
-import './Home.scss'
-import Logo from '../../assets/images/Logo.png'
-import { Link } from 'react-router-dom'
-import { LogoComponent } from './logo/Logo'
+import "./Home.scss";
+import Logo from "../../assets/images/Logo.png";
+import { Link } from "react-router-dom";
+import { LogoComponent } from "./logo/Logo";
 
-const Home = () => {
+const Home: React.FC = () => {
   return (
     <div className="container home-page">
       <div className="text-zone">
@@ -19,7 +19,7 @@ const Home = () => {
       </div>
       <LogoComponent />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

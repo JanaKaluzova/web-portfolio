@@ -1,9 +1,9 @@
-import './Layout.scss'
+import "./Layout.scss";
 
-import Sidebar from '../sidebar/Sidebar'
-import { Outlet } from 'react-router-dom'
+import Sidebar from "../sidebar/Sidebar";
+import { Outlet } from "react-router-dom";
 
-const Layout = () => {
+const Layout: React.FC = () => {
   return (
     <div className="App">
       <Sidebar />
@@ -19,7 +19,7 @@ const Layout = () => {
         </span>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

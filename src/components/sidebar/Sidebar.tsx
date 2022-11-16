@@ -1,5 +1,4 @@
 import "./Sidebar.scss";
-
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import Logo from "../../assets/images/Logo.png";
@@ -12,7 +11,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-const Sidebar = () => {
+const Sidebar: React.FC = () => {
   return (
     <div className="nav-bar">
       <Link className="logo" to="/">

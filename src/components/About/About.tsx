@@ -1,42 +1,61 @@
-import './About.scss'
+import "./About.scss";
 
-import React, { useEffect, useState } from 'react'
-import AnimatedLetters from '../AnimatedLetters/AnimatedLetters'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngular, faCss3, faGitAlt, faHtml5, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons'
-import Loader from 'react-loaders'
+import React, { useEffect, useState } from "react";
+import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faAngular,
+  faCss3,
+  faGitAlt,
+  faHtml5,
+  faJsSquare,
+  faReact,
+} from "@fortawesome/free-brands-svg-icons";
 
-const About = () => {
-  const [letterClass, setLetterClass] = useState('text-animate')
+const About: React.FC = () => {
+  const [letterClass, setLetterClass] = useState("text-animate");
 
   useEffect(() => {
     let timeoutId = setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 3000)
+      setLetterClass("text-animate-hover");
+    }, 3000);
 
     return () => {
-      clearTimeout(timeoutId)
-    }
-  }, [])
+      clearTimeout(timeoutId);
+    };
+  }, []);
 
   return (
     <>
       <div className="container about-page">
         <div className="text-zone">
           <h1>
-            <AnimatedLetters letterClass={letterClass} strArray={'About me'.split('')} idx={15} />
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={"About me".split("")}
+              idx={15}
+            />
           </h1>
           <p>
-            I'm a junior fontend developer looking for an opportunity in a dynamic company. I would like to participate
-            on creating modern apps that bring an excellent user experience.
+            I'm a junior fontend developer looking for an opportunity in a
+            dynamic company. I would like to participate on creating modern apps
+            that bring an excellent user experience.
           </p>
           <p>
-            I'm passionate about programming and driven by curiosity. I'm ambitious, detail-oriented and ready to
-            improve my knowledge and work hard until the last piece of code. I'm not afraid to dive deeply into the
-            issue and work on it until solved. I'm open minded and have can-do attitude.
+            I started with programming at beginning of 2021 and since Jan 2022,
+            I focus on React and Typescript. I have tried different styling
+            tools, such as Bootstrap, Material UI, styled components, SASS.
           </p>
           <p>
-            Changing my career when being on a top of my skills shows how much I love challenge and learning new things.
+            I'm passionate about technologies and driven by curiosity. I'm
+            ambitious, detail-oriented and ready to improve my knowledge and
+            work hard until the last piece of code. I'm not afraid to dive
+            deeply into the issue and work on it until solved. I'm open minded
+            and have can-do attitude.
+          </p>
+          <p>
+            Changing my career when being on a top of my skills shows how much I
+            love challenge and learning new things.
           </p>
         </div>
 
@@ -64,7 +83,7 @@ const About = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default About
+export default About;

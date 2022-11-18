@@ -1,13 +1,20 @@
 import React, { useRef } from "react";
 import { auth, db, storage } from "../../firebase";
 import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
-import { addDoc, collection, waitForPendingWrites } from "firebase/firestore";
+import { addDoc, collection } from "firebase/firestore";
 
-type Portfolio = {
+export type PortfolioUpload = {
   nameValue: string;
   descValue: string;
   urlValue: string;
   imageValue: File | string | null;
+};
+
+export type PortfolioDownload = {
+  nameValue: string;
+  descValue: string;
+  urlValue: string;
+  imageValue: string;
 };
 
 const Home: React.FC = () => {
@@ -62,7 +69,7 @@ const Home: React.FC = () => {
     );
   };
 
-  const savePortfolio = async (portfolio: Portfolio) => {
+  const savePortfolio = async (portfolio: PortfolioUpload) => {
     console.log(portfolio);
     try {
       await addDoc(collection(db, "portfolio"), portfolio);

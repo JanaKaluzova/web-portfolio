@@ -1,10 +1,14 @@
 import "./Portfolio.scss";
 import React, { useEffect, useState } from "react";
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
-import portfolioData from "../../assets/data/portfolio.json";
+
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "../../firebase";
+import { PortfolioDownload } from "../Dashboard/Home";
 
 const Portfolio: React.FC = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
+  const [portfolio, setPortfolio] = useState<PortfolioDownload[]>([]);
 
   useEffect(() => {
     let timeoutId = setTimeout(() => {
@@ -16,28 +20,36 @@ const Portfolio: React.FC = () => {
     };
   }, []);
 
-  type PortfolioProps = {
-    cover: string;
-    title: string;
-    description: string;
-    url: string;
+  useEffect(() => {
+    getPortfolio();
+  }, []);
+
+  const getPortfolio = async () => {
+    const querySnapshot = await getDocs(collection(db, "portfolio"));
+
+    const portfolios = querySnapshot.docs.map((doc) => doc.data());
+
+    setPortfolio(portfolios as PortfolioDownload[]);
   };
 
-  const renderPortfolio = (portfolio: PortfolioProps[]) => {
+  const renderPortfolio = (portfolio: PortfolioDownload[]) => {
     return (
       <div className="images-container">
         {portfolio.map((port, idx) => {
           return (
             <div key={idx} className="image-box">
               <img
-                src={port.cover}
+                src={port.imageValue}
                 alt="portfolio"
                 className="portfolio-image"
               />
               <div className="content">
-                <p className="title">{port.title}</p>
-                <h4 className="description">{port.description}</h4>
-                <button className="btn" onClick={() => window.open(port.url)}>
+                <p className="title">{port.nameValue}</p>
+                <h4 className="description">{port.descValue}</h4>
+                <button
+                  className="btn"
+                  onClick={() => window.open(port.urlValue)}
+                >
                   View
                 </button>
               </div>
@@ -58,7 +70,11 @@ const Portfolio: React.FC = () => {
             letterClass={letterClass}
           />
         </h1>
-        <div>{renderPortfolio(portfolioData.portfolio)}</div>
+        <p className="">
+          As I do not have a commercial experience/projects yet, here you can
+          see my training projects.
+        </p>
+        <div>{renderPortfolio(portfolio)}</div>
       </div>
     </>
   );

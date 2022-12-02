@@ -1,7 +1,7 @@
 import "./Sidebar.scss";
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import Logo from "../../assets/images/Logo.png";
+import Logo from "../../assets/images/logo2.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faEnvelope,

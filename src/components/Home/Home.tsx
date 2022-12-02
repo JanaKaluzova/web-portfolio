@@ -1,5 +1,5 @@
 import "./Home.scss";
-import Logo from "../../assets/images/Logo.png";
+import Logo from "../../assets/images/logo2.png";
 import { Link } from "react-router-dom";
 import { LogoComponent } from "./logo/Logo";
 

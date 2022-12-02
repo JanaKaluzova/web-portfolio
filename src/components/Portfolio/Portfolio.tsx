@@ -1,10 +1,15 @@
 import "./Portfolio.scss";
 import React, { useEffect, useState } from "react";
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
-
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../../firebase";
-import { PortfolioDownload } from "../Dashboard/Home";
+
+export type PortfolioDownload = {
+  nameValue: string;
+  descValue: string;
+  urlValue: string;
+  imageValue: string;
+};
 
 const Portfolio: React.FC = () => {
   const [letterClass, setLetterClass] = useState("text-animate");

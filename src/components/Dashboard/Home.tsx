@@ -10,13 +10,6 @@ export type PortfolioUpload = {
   imageValue: File | string | null;
 };
 
-export type PortfolioDownload = {
-  nameValue: string;
-  descValue: string;
-  urlValue: string;
-  imageValue: string;
-};
-
 const Home: React.FC = () => {
   const form = useRef<HTMLFormElement>(null);
 

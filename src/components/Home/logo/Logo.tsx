@@ -1,5 +1,5 @@
 import "./Logo.scss";
-import Logo from "../../../assets/images/logo2.png";
+import Logo from "../../../assets/images/Logo-full.jpg";
 
 import React from "react";
 

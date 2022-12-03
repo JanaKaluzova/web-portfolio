@@ -1,5 +1,5 @@
 .nav-bar {
-  background: #181818;
+  background: black;
   border-right: #B026ff solid 0.5px;
   width: 70px;
   height: 100%;
@@ -128,7 +128,7 @@ ul {
     a {
       padding: 7px 0;
       display: block;
-      font-size: 15px;
+      font-size: 25px;
       line-height: 16px;
     }
 
@@ -153,9 +153,16 @@ ul {
     height: auto;
     min-height: auto;
 
-    ul, nav {
+    .logo img{
+      height: 50%;
+      width: 50%;
+    }
+
+    nav, ul {
       display: none;
     }
+
+  
 
     nav {
       
@@ -168,10 +175,12 @@ ul {
       z-index: 2;
       margin: 0;
 
-      a {
+      a{
       display: flex;
       justify-content: center;
       align-items: center;
+      font-size: 25px;
+    
       }
 
       a:after {
@@ -179,6 +188,7 @@ ul {
       position: initial;
       width: auto;
       margin-left: 10px;
+      font-size: 20px;
     }
 
       a svg{
@@ -188,6 +198,8 @@ ul {
     &.mobile-show {
       display: block;
     }
+
+  
 
     }
 

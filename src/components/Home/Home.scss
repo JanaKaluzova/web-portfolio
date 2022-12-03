@@ -89,6 +89,8 @@
         display: none;
     }
 
+   
+
     .home-page {
         .text-zone {
             position: initial;
@@ -96,6 +98,11 @@
             transform: none;
             padding: 10px;
             box-sizing: border-box;
+
+            h1 img {
+                height: 10%;
+                width: 10%;
+            }
         }
 
     .flat-button {
@@ -107,7 +114,7 @@
 
         .logo-container {
             position: relative;
-            width: 100px;
+            width: 200px;
             height: auto;
             top: 50px;
             right: 0;

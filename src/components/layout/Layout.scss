@@ -123,9 +123,16 @@
 @media screen and (max-width: 1200px) {
 .page {
     position: initial,
+
+}
+
+.bottom-tag-html,
+.tags{
+    display: none;
 }
 
 .container {
+
     position: initial;
     height: auto;
     min-height: auto;

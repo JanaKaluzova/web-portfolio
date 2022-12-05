@@ -5,6 +5,7 @@ import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
 import emailjs from "@emailjs/browser";
 import { Marker, TileLayer } from "react-leaflet";
 import { MapContainer } from "react-leaflet";
+import Loader from "react-loaders";
 
 const Contact: React.FC = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
@@ -13,7 +14,7 @@ const Contact: React.FC = () => {
   useEffect(() => {
     let timeoutId = setTimeout(() => {
       setLetterClass("text-animate-hover");
-    }, 3000);
+    }, 2000);
 
     return () => {
       clearTimeout(timeoutId);
@@ -108,6 +109,8 @@ const Contact: React.FC = () => {
           </MapContainer>
         </div>
       </div>
+
+      <Loader type="pacman" active />
     </>
   );
 };

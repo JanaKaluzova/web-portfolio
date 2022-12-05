@@ -10,6 +10,7 @@ import {
   faJsSquare,
   faReact,
 } from "@fortawesome/free-brands-svg-icons";
+import Loader from "react-loaders";
 
 const About: React.FC = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
@@ -17,7 +18,7 @@ const About: React.FC = () => {
   useEffect(() => {
     let timeoutId = setTimeout(() => {
       setLetterClass("text-animate-hover");
-    }, 3000);
+    }, 2000);
 
     return () => {
       clearTimeout(timeoutId);
@@ -56,6 +57,10 @@ const About: React.FC = () => {
             Changing my career when being on a top of my skills shows how much I
             love challenge and learning new things.
           </p>
+          <p>
+            When not coding, I spend my time with my family and I also love
+            reading and travelling around the world.
+          </p>
         </div>
 
         <div className="stage-cube-cont">
@@ -81,6 +86,8 @@ const About: React.FC = () => {
           </div>
         </div>
       </div>
+
+      <Loader type="pacman" active />
     </>
   );
 };

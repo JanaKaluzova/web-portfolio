@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../../firebase";
+import Loader from "react-loaders";
 
 export type PortfolioDownload = {
   nameValue: string;
@@ -81,6 +82,8 @@ const Portfolio: React.FC = () => {
         </p>
         <div>{renderPortfolio(portfolio)}</div>
       </div>
+
+      <Loader type="pacman" active />
     </>
   );
 };

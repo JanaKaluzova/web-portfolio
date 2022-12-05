@@ -35,8 +35,8 @@
     margin: 0 auto;
     z-index: 1;
     transform-style: preserve-3d;
-    animation: fadeIn 0.8s forwards;
-    animation-delay: 0.8s;
+    animation: fadeIn 0.5s forwards;
+    animation-delay: 0.5s;
 }
 
 .container.about-page,
@@ -71,7 +71,7 @@
                 font-family: 'La Belle Aurore', cursive;
                 font-size: 18px;
                 position: absolute;
-              margin-left: 20px;
+                margin-left: 20px;
                 left: -30px;
                 bottom: -20px;
                 opacity: 0.8;

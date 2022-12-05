@@ -42,9 +42,10 @@ const About: React.FC = () => {
             that bring an excellent user experience.
           </p>
           <p>
-            I started with programming at beginning of 2021 and since Jan 2022,
-            I focus on React and Typescript. I have tried different styling
-            tools, such as Bootstrap, Material UI, styled components, SASS.
+            I started with programming at the beginning of 2021 and since Jan
+            2022, I have been focusing on React and Typescript. I have tried
+            different styling tools, such as Bootstrap, Material UI, styled
+            components, SASS.
           </p>
           <p>
             I'm passionate about technologies and driven by curiosity. I'm

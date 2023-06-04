@@ -77,8 +77,7 @@ const Portfolio: React.FC = () => {
           />
         </h1>
         <p className="">
-          As I do not have a commercial experience/projects yet, here you can
-          see my training projects.
+          Here you can see my training projects.
         </p>
         <div>{renderPortfolio(portfolio)}</div>
       </div>
